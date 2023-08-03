@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alta.css">
+    <title>Alta</title>
+    
+</head>
+<body>
+    <h1>Alta Persona</h1>
+    <a class='back' href='javascript:history.back()'> Volver Atrás</a>
+    <form action="validaConsulta.php" method="get">
+        <table width="15%" align="center">
+            <tr>
+                <td><label for="dni">Dni</label></td>  
+                <td><label for="nombre">Nombre</label></td>  
+                <td><label for="apellido1">Apellido1</label></td>  
+                <td><label for="apellido2">apellido2</label></td>  
+                <td><label for="direccion">Dirección</label></td>  
+                <td><label for="telefono">Teléfono</label></td>  
+                <td><label for="matricula">Matrícula</label></td>  
+            </tr>
+            <tr>
+                <td><input type="text" name="dni" id="dni"></td>
+                <td><input type="text" name="nombre" id="nombre"></td>
+                <td><input type="text" name="apellido1" id="apellido1"></td>
+                <td><input type="text" name="apellido2" id="apellido2"></td>
+                <td><input type="text" name="direccion" id="direccion"></td>
+                <td><input type="text" name="telefono" id="telefono"></td>
+                <td><input type="text" name="matricula" id="matricula"></td>
+            </tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="alta" id="alta" value="Dar de alta"></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
