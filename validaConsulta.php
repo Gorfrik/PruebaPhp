@@ -1,7 +1,7 @@
 
 
 <?php
-
+//busqueda persona
 if (isset($_GET["enviando"])) {
 
     $buscar = $_GET["busqueda"];
@@ -11,6 +11,7 @@ if (isset($_GET["enviando"])) {
     require("consulta.php");
     consultaPersona($buscar, $opcion);
 }
+//actualizar operacion
 if (isset($_GET["enviarOp"])) {
 
     $buscarDni = $_GET["dni"];
@@ -20,7 +21,15 @@ if (isset($_GET["enviarOp"])) {
     require("actualizar.php");
     addOperacion($buscarDni, $eleccion);
 }
+//actualizar datos generales
+if (isset($_GET["enviarAc"])) {
 
+    $buscarAc = $_GET["dniAc"];
+
+    require("actualizarMenu.php");
+    actualizar($buscarAc);
+}
+//alta general
 if (isset($_GET["alta"])) {
 
     $dni = $_GET["dni"];

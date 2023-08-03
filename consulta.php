@@ -71,9 +71,7 @@
         $resultado = mysqli_query($conexion, $consulta);
 
 
-        echo "<div class='todo'><div class='cabecera'><h1>Pendejos</h1><a class='back' href='javascript:history.back()'> Volver Atrás</a></div>";
-        echo "<table>";
-        echo "<tr><th>Dni</th>
+        echo "<div class='todo'><div class='cabecera'><h1>Pendejos</h1><a class='back' href='javascript:history.back()'> Volver Atrás</a></div><table><tr><th>Dni</th>
         <th>Nombre</th>
         <th>Apellido1</th>
         <th>Apellido2</th>

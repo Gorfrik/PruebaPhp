@@ -67,6 +67,23 @@
             </tr>
         </table>
     </form>
+    <h2 align="center">actualizar persona</h2>
+    <form action="validaConsulta.php" method="get">
+        <table width="15%" align="center">
+            <tr>
+                <td><label for="dniAc"></label>Dni</td>
+                <td>
+                    <input type="text" name="dniAc" id="dniAc">
+                </td>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="enviarAc" id="enviarAc" value="Buscar"></td>
+            </tr>
+        </table>
+    </form>
+    </form>
 
 
 

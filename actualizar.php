@@ -16,14 +16,4 @@ if ($conexion->query($sql) === TRUE) {
 header("refresh:3;index.php");
 $conexion->close();
 }
-
-function actualizar(){
-
-
-    
-}
-
-
-
-
 ?>
