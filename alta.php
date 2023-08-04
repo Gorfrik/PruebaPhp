@@ -23,17 +23,17 @@ function personaAlta($dni, $nombre, $apellido1, $apellido2,$direccion,$telefono,
         if ($conexion->query($sql2) === TRUE) {
             echo "<h1 align='center'>direcion</h1>";
         } else {
-            echo "Error: " . $sql . "<br>";
+            echo "Error: " . $sql2 . "<br>";
         }
         if ($conexion->query($sql3) === TRUE) {
             echo "<h1 align='center'>telefono</h1>";
         } else {
-            echo "Error: " . $sql . "<br>";
+            echo "Error: " . $sql3 . "<br>";
         }
         if ($conexion->query($sql4) === TRUE) {
             echo "<h1 align='center'>matricula</h1>";
         } else {
-            echo "Error: " . $sql . "<br>";
+            echo "Error: " . $sql4 . "<br>";
         }
         header("refresh:3;index.php");
         $conexion->close();

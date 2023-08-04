@@ -13,7 +13,6 @@
     <h1>Buscando a Memo</h1>
     <a href="alta.html">Dar de alta</a>
     <a href="baja.html">Dar de baja</a>
-    <a href="actualizar.html">Actualizar</a>
     <form action="validaConsulta.php" method="get">
         <table width="15%" align="center">
             <tr>
@@ -84,11 +83,6 @@
         </table>
     </form>
     </form>
-
-
-
-
-
 
 </body>
 

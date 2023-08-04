@@ -29,6 +29,23 @@ if (isset($_GET["enviarAc"])) {
     require("actualizarMenu.php");
     actualizar($buscarAc);
 }
+if (isset($_GET["ActualizarGeneral"])) {
+
+    $dni = $_GET["dni"];
+    $nombre = $_GET["nombre"];
+    $apellido1 = $_GET["apellido1"];
+    $apellido2 = $_GET["apellido2"];
+    $notas = $_GET["notas"];
+    $municipio = $_GET["municipio"];
+    $direccion = $_GET["direccion"];
+    $matricula = $_GET["matricula"];
+    $telefono = $_GET["telefono"];
+    $conocidos = $_GET["conocidos"];
+    $vinculo = $_GET["vinculo"];
+
+    require("actualizar.php");
+    actualizar($dni,$nombre,$apellido1,$apellido2,$notas,$municipio,$direccion,$matricula,$telefono,$conocidos,$vinculo);
+}
 //alta general
 if (isset($_GET["alta"])) {
 
